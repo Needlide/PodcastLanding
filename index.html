@@ -16,21 +16,21 @@
 	<body class="main-page">
 		<header class="main-page__header">
 			<a class="header__logo" href="#">
-				<svg>
+				<svg class="logo__svg">
 					<use xlink:href="./icons/icons.svg#icon-logo"/>
 				</svg>
 			</a>
 			<nav class="header__nav">
 				<ul class="nav__list">
-					<li>
-						<a href="#">Episodes</a>
+					<li class="list__item">
+						<a class="item__link" href="#">Episodes</a>
 					</li>
-					<li>
-						<a href="#">About</a>
+					<li class="list__item">
+						<a class="item__link" href="#">About</a>
 					</li>
-					<li>
-						<a href="#">More</a>
-						<svg>
+					<li class="list__item">
+						<a class="item__link" href="#">More</a>
+						<svg class="item__svg">
 							<use xlink:href="./icons/icons.svg#icon-arrow-down"/>
 						</svg>
 					</li>
@@ -43,25 +43,147 @@
 		</header>
 		<main>
 			<section class="main-page__hero">
-				
+				<div class="hero__block block_left">
+					<svg class="block__svg">
+						<use xlink:href="./icons/icons.svg#icon-swirl"/>
+					</svg>
+					<svg class="block__svg">
+						<use xlink:href="./icons/icons.svg#icon-star2"/>
+					</svg>
+				</div>
+				<div class="hero__block block_center">
+					<h1 class="block__heading">Your Daily <span class="heading__span">Podcast</span></h1>
+					<p class="block__text">We cover all kinds of categories and a weekly special guest.</p>
+					<button class="block__button">subscribe</button>
+				</div>
+				<div class="hero__block block_right">
+					<svg class="block__svg">
+						<use xlink:href="./icons/icons.svg#icon-stars-hero"/>
+					</svg>
+				</div>
 			</section>
 			<section class="main-page__gallery">
 				
 			</section>
 			<section class="main-page__supporters">
-				
+				<p class="supporters__text">Supported by:</p>
+				<ul class="supporters__list">
+					<li class="list__item">
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-spotify"/>
+						</svg>
+					</li>
+					<li class="list__item">
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-google-podcast"/>
+						</svg>
+					</li>
+					<li class="list__item">
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-youtube"/>
+						</svg>
+					</li>
+				</ul>
 			</section>
 			<section class="main-page__description">
-				
+				<h2>Talk. Listen. Get inspired by every minute of it.</h2>
+				<div>
+					<svg>
+						<use xlink:href="./icons/icons.svg#icon-thinking"/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+				</div>
+				<div>
+					<svg>
+						<use xlink:href="./icons/icons.svg#icon-lamp"/>
+					</svg>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
+				</div>
 			</section>
 			<section class="main-page__quote">
-				
+				<svg>
+					<use xlink:href="./icons/icons.svg#icon-swirl2"/>
+				</svg>
+				<svg>
+					<use xlink:href="./icons/icons.svg#icon-star"/>
+				</svg>
+				<div>
+					<p>"</p>
+					<p>One of the best daily podcasts that covers every topic on Spotify.</p>
+					<img src="">
+					<p>John Smith,</p>
+					<svg>
+						<use xlink:href="./icons/icons.svg#icon-spotify-logo"/>
+					</svg>
+					<p>Social Community Manager</p>
+				</div>
 			</section>
 			<section class="main-page__feedbacks">
-				
+				<svg>
+					<use xlink:href="./icons/icons.svg#icon-sparkle-full"/>
+				</svg>
+				<h2>What our listeners say</h2>
+				<p>Their experience throughout every platform</p>
+				<div>
+					<svg>
+						<use xlink:href="./icons/icons.svg#icon-arrow-left"/>
+					</svg>
+					<svg>
+						<use xlink:href="./icons/icons.svg#icon-arrow-right"/>
+					</svg>
+				</div>
 			</section>
 			<section class="main-page__membership">
-				
+				<svg>
+					<use xlink:href="./icons/icons.svg#icon-scribble1"/>
+				</svg>
+				<h2>Membership benefits</h2>
+				<p>Become our sponsor and get all benefits</p>
+				<div>
+					<div>
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-scribble"/>
+						</svg>
+						<h3>Topic by Request</h3>
+						<p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div>
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-shining-stars"/>
+						</svg>
+						<h3>Exclusive content</h3>
+						<p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div>
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-face1"/>
+						</svg>
+						<h3>Join the Community</h3>
+						<p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div>
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-face2"/>
+						</svg>
+						<h3>Livestreaming Access</h3>
+						<p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div>
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-fire"/>
+						</svg>
+						<h3>Exclusive Episodes & Merch</h3>
+						<p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div>
+						<svg>
+							<use xlink:href="./icons/icons.svg#icon-star-sm"/>
+						</svg>
+						<h3>And much more!</h3>
+						<p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<button>See pricing</button>
 			</section>
 			<section class="main-page__recent-episodes">
 				
