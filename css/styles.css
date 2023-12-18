@@ -1,0 +1,244 @@
+:root {
+  --background-color-champagne: #f7ede8;
+  --black-color: #000;
+  --white-color: #fff;
+  --text-color-vermillion: #cd4631;
+  --text-color-davys-grey: #4d4d4d;
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*------------------------------HEADER------------------------------*/
+
+.header {
+  background-color: var(--background-color-champagne);
+  display: flex;
+  flex-direction: row;
+}
+
+.header__logo {
+  margin-top: 24px;
+  margin-left: 9.72%;
+  width: 74px;
+  height: 74px;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
+.main-nav {
+  margin-left: 8.55%;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 60px /*4.17%*/;
+  margin-top: 51px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.nav__svg {
+  width: 16px;
+  height: 16px;
+}
+
+.actions {
+  margin-left: 21.11%;
+  margin-top: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions__recent-episodes {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 2px solid var(--black-color);
+}
+
+.actions__recent-episodes:hover,
+.actions__recent-episodes:focus {
+  color: var(--white-color);
+
+  background: var(--black-color);
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+  transition: background 300ms;
+}
+
+.actions__subscribe {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 2px solid var(--black-color);
+}
+
+.actions__subscribe:hover,
+.actions__subscribe:focus {
+  color: var(--white-color);
+
+  background: var(--black-color);
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+  transition: background 300ms;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*------------------------------------------HERO---------------------------------------*/
+
+.hero {
+  padding-top: 64px;
+  background-color: var(--background-color-champagne);
+}
+
+.hero__main {
+  display: flex;
+  flex-direction: row;
+}
+
+.block_svg {
+  position: absolute;
+}
+
+.hero-swirl {
+  width: 293px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.block_center {
+  width: 36.5%;
+}
+
+.hero__heading {
+  color: var(--black-color);
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 96px */
+  letter-spacing: -3.84px;
+}
+
+.heading__span {
+  color: var(--text-color-vermillion);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -3.84px;
+}
+
+.main__block {
+  text-align: center;
+}
+
+.hero__text {
+  width: 374px;
+  color: var(--text-color-davys-grey);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  margin: 40px auto 0;
+}
+
+.hero__link {
+  display: inline-flex;
+  padding: 24px 48px;
+  justify-content: center;
+  align-items: center;
+
+  margin: 60px auto 0;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 8px;
+  border: 2px solid var(--black-color);
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  color: var(--white-color);
+
+  background: var(--black-color);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+
+  transition: background 300ms;
+}
