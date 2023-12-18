@@ -7,22 +7,28 @@
 }
 
 body {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: var(--background-color-champagne);
 }
 
 img {
   display: block;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
   margin: 0;
   padding: 0;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -69,6 +75,12 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: 160%;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--text-color-vermillion);
+  transition: color 300ms;
 }
 
 .svg-container {
@@ -164,18 +176,38 @@ ul {
   flex-direction: row;
 }
 
-.block_svg {
-  position: absolute;
+.hero__block_left {
+  flex: 1;
+  height: auto;
+}
+
+.hero__svg {
+  position: relative;
+  width: 100%;
+  height: 114%;
+  top: -20%;
+  left: 0%;
 }
 
 .hero-swirl {
-  width: 293px;
-  height: auto;
-  flex-shrink: 0;
+  width: 100%;
+  height: 114%;
+  position: relative;
+  top: -20%;
+  left: 0%;
 }
 
-.block_center {
-  width: 36.5%;
+.hero__block {
+  text-align: center;
+}
+
+.hero__block_center {
+  flex-basis: 513px;
+}
+
+.hero__block_right {
+  flex: 1;
+  height: auto;
 }
 
 .hero__heading {
@@ -188,17 +220,13 @@ ul {
   letter-spacing: -3.84px;
 }
 
-.heading__span {
+.hero__heading-span {
   color: var(--text-color-vermillion);
   font-size: 96px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -3.84px;
-}
-
-.main__block {
-  text-align: center;
 }
 
 .hero__text {
@@ -241,4 +269,213 @@ ul {
   box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
 
   transition: background 300ms;
+}
+
+.hero__gallery {
+  margin-top: 120px;
+}
+.hero__supporters {
+}
+
+/*----------------------------------------------------------------*/
+
+.description {
+}
+.feedbacks{
+}
+.membership {
+}
+.recent-episodes {
+}
+.sponsor {
+}
+.article-news {
+}
+.app {
+}
+.footer__head {
+}
+.footer__bottom {
+}
+.logo {
+}
+.nav__list {
+}
+.actions__recent-episodes {
+}
+.actions__subscribe {
+}
+.quote {
+}
+.feedbacks__svg {
+}
+.feedbacks__heading {
+}
+.feedbacks__text {
+}
+.feedbacks-list {
+}
+.membership__svg {
+}
+.membership__heading {
+}
+.membership__text {
+}
+.membership__block {
+}
+.membership__btn {
+}
+.recent-episodes__heading {
+}
+.recent-episodes__text {
+}
+.recent-episodes__svg {
+}
+.recent-episodes__block {
+}
+.sponsor__svg {
+}
+.sponsor__heading {
+}
+.sponsor__text {
+}
+.sponsor__block {
+}
+.article-news__heading {
+}
+.article-news__text {
+}
+.article-news__svg {
+}
+.article-news__block {
+}
+.app__block {
+}
+.head__item {
+}
+.bottom__text {
+}
+.nav__item {
+}
+.supporters__text {
+}
+.supporters__list {
+}
+.description__heading {
+}
+.description__block {
+}
+.quote__svg {
+}
+.quote__block {
+}
+.navigation-left.block__svg {
+}
+.navigation-right.block__svg {
+}
+.block__svg {
+}
+.block__img {
+}
+.block__head {
+}
+.block__tags {
+}
+.block__text {
+}
+.block__heading {
+}
+.block__button {
+}
+.block__item {
+}
+.item__logo {
+}
+.item__text {
+}
+.item__socials {
+}
+.item__links {
+}
+.item__logos {
+}
+.text__link {
+}
+.nav__link {
+}
+.nav__link.svg-container {
+}
+.list__item {
+}
+.head__heading {
+}
+.head__text {
+}
+.head__description {
+}
+.tags__tag {
+}
+.tags__date {
+}
+.item__svg {
+}
+.socials__link {
+}
+.links__list {
+}
+.logos__text {
+}
+.logos__item {
+}
+.nav__svg {
+}
+.list__svg {
+}
+.block__tile {
+}
+.link__svg {
+}
+.tile__svg {
+}
+.tile__heading {
+}
+.tile__text {
+}
+.item__poster-block {
+}
+.item__info {
+}
+.item__head {
+}
+.item__link {
+}
+.poster-block__img {
+}
+.poster-block__tag {
+}
+.info__eps {
+}
+.info__heading {
+}
+.info__description {
+}
+.info__block {
+}
+.head__price-block {
+}
+.info__list {
+}
+.head__popular {
+}
+.price-block__btn {
+}
+.price-block__price {
+}
+.popular__heading {
+}
+.popular__tag {
+}
+.price__number {
+}
+.price__period {
 }
