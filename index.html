@@ -83,22 +83,25 @@
         <div class="hero__gallery swiper">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
-              <img src="./images/self_confidence_cover.png" />
+              <img
+                class="gallery__cover"
+                src="./images/self_confidence_cover.png"
+              />
             </li>
             <li class="swiper-slide">
-              <img src="./images/shop_cart_cover.png" />
+              <img class="gallery__cover" src="./images/shop_cart_cover.png" />
             </li>
             <li class="swiper-slide">
-              <img src="./images/vw_cover.png" />
+              <img class="gallery__cover" src="./images/vw_cover.png" />
             </li>
             <li class="swiper-slide">
-              <img src="./images/rights_cover.png" />
+              <img class="gallery__cover" src="./images/rights_cover.png" />
             </li>
             <li class="swiper-slide">
-              <img src="./images/mind_cover.png" />
+              <img class="gallery__cover" src="./images/mind_cover.png" />
             </li>
             <li class="swiper-slide">
-              <img src="./images/covid_cover.png" />
+              <img class="gallery__cover" src="./images/covid_cover.png" />
             </li>
           </ul>
         </div>
@@ -122,12 +125,17 @@
             </li>
           </ul>
         </div>
+        <svg class="hero__svg design_svg">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
       </section>
       <section class="description container">
-        <div>
-          <h2 class="description__heading">
-            Talk. Listen. Get inspired by every minute of it.
-          </h2>
+        <div class="description__top">
+          <div class="heading__container">
+            <h2 class="description__heading">
+              Talk. Listen. Get inspired by every minute of it.
+            </h2>
+          </div>
           <div class="description__block">
             <svg class="block__svg">
               <use xlink:href="./icons/icons.svg#icon-thinking" />

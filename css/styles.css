@@ -274,14 +274,71 @@ ul {
 .hero__gallery {
   margin-top: 120px;
 }
+
+.gallery__cover {
+  width: 373px;
+  height: 373px;
+}
+
 .hero__supporters {
+  display: flex;
+  gap: 9.6%;
+  align-items: center;
+  margin-top: 120px;
+  border-top: var(--text-color-davys-grey) 1px solid;
+  border-bottom: var(--text-color-davys-grey) 1px solid;
+}
+
+.supporters__text {
+  color: var(--black-color);
+  font-size: 22.65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 31.71px */
+  letter-spacing: -0.453px;
+}
+
+.supporters__list {
+  display: flex;
+  gap: 20px;
+}
+
+.design_svg {
+  bottom: -75px;
 }
 
 /*----------------------------------------------------------------*/
 
+/*--------------------------DESCRIPTION---------------------------*/
+
 .description {
+  background-color: var(--white-color);
 }
-.feedbacks{
+
+.description__top {
+  width: 100%;
+  height: auto;
+  padding-top: 140px;
+}
+
+.heading__container {
+  width: 735px;
+  margin: 0 auto;
+}
+
+.description__heading {
+  color: var(--black-color);
+  text-align: center;
+
+  font-size: 59.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 71.16px */
+  letter-spacing: -1.186px;
+}
+.description__block {
+}
+.feedbacks {
 }
 .membership {
 }
@@ -357,14 +414,7 @@ ul {
 }
 .nav__item {
 }
-.supporters__text {
-}
-.supporters__list {
-}
-.description__heading {
-}
-.description__block {
-}
+
 .quote__svg {
 }
 .quote__block {
