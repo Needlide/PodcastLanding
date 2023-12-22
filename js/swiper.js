@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   var feedbacksSwiper = new Swiper(".feedbacks-list", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 10,
     loop: true,
     navigation: {
       nextEl: ".navigation-right",
