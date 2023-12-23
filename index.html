@@ -125,7 +125,7 @@
             </li>
           </ul>
         </div>
-        <svg class="hero__svg design_svg">
+        <svg class="design__svg">
           <use xlink:href="./icons/icons.svg#icon-scribble3" />
         </svg>
       </section>
@@ -188,7 +188,7 @@
             </div>
           </div>
         </div>
-        <svg class="hero__svg design_svg quote_scribble">
+        <svg class="design__svg quote_scribble">
           <use xlink:href="./icons/icons.svg#icon-scribble3" />
         </svg>
       </section>
@@ -281,19 +281,23 @@
             </svg>
           </div>
         </div>
-        <svg class="hero__svg design_svg quote_scribble">
+        <svg class="design__svg quote_scribble">
           <use xlink:href="./icons/icons.svg#icon-scribble3" />
         </svg>
       </section>
       <section class="membership container">
-        <svg class="membership__svg">
-          <use xlink:href="./icons/icons.svg#icon-scribble1" />
-        </svg>
-        <h2 class="membership__heading">Membership benefits</h2>
-        <p class="membership__text">Become our sponsor and get all benefits</p>
+        <div class="membership__heading-wrapper">
+          <svg class="membership__heading-svg">
+            <use xlink:href="./icons/icons.svg#icon-scribble1" />
+          </svg>
+          <h2 class="membership__heading">Membership benefits</h2>
+          <p class="membership__text">
+            Become our sponsor and get all benefits
+          </p>
+        </div>
         <div class="membership__block">
-          <ul>
-            <li>
+          <ul class="membership__list">
+            <li class="membership__list-item">
               <div class="block__tile">
                 <svg class="tile__svg">
                   <use xlink:href="./icons/icons.svg#icon-scribble" />
@@ -305,7 +309,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="membership__list-item">
               <div class="block__tile">
                 <svg class="tile__svg">
                   <use xlink:href="./icons/icons.svg#icon-shining-stars" />
@@ -317,7 +321,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="membership__list-item">
               <div class="block__tile">
                 <svg class="tile__svg">
                   <use xlink:href="./icons/icons.svg#icon-face1" />
@@ -329,7 +333,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="membership__list-item">
               <div class="block__tile">
                 <svg class="tile__svg">
                   <use xlink:href="./icons/icons.svg#icon-face2" />
@@ -341,7 +345,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="membership__list-item">
               <div class="block__tile">
                 <svg class="tile__svg">
                   <use xlink:href="./icons/icons.svg#icon-fire" />
@@ -353,7 +357,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="membership__list-item">
               <div class="block__tile">
                 <svg class="tile__svg">
                   <use xlink:href="./icons/icons.svg#icon-star-sm" />
@@ -367,159 +371,211 @@
             </li>
           </ul>
         </div>
-        <a class="membership__btn">See pricing</a>
+        <div class="membership__btn-wrapper">
+          <a class="membership__btn">See pricing</a>
+        </div>
+        <svg class="design__svg quote_scribble">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
       </section>
       <section class="recent-episodes container">
-        <h2 class="recent-episodes__heading">Recent Episodes</h2>
-        <p class="recent-episodes__text">Available on your favorite platform</p>
+        <div class="recent-episodes__heading-wrapper">
+          <h2 class="recent-episodes__heading">Recent Episodes</h2>
+          <p class="recent-episodes__text">
+            Available on your favorite platform
+          </p>
+        </div>
         <svg class="recent-episodes__svg">
           <use xlink:href="./icons/icons.svg#icon-sparkle" />
         </svg>
         <div class="recent-episodes__block">
-          <ul>
-            <li>
-              <div class="block__item">
-                <div class="item__poster-block">
-                  <img
-                    class="poster-block__img"
-                    src="./images/covid_cover.png"
-                  />
-                  <p class="poster-block__tag">covid-19</p>
-                  <p class="poster-block__tag">health</p>
+          <ul class="recent-episodes__list">
+            <li class="recent-episodes__item">
+              <div class="item__poster-block">
+                <img class="poster-block__img" src="./images/covid_cover.png" />
+                <div class="poster__tags">
+                  <p class="poster__tag">covid-19</p>
+                  <p class="poster__tag">health</p>
                 </div>
-                <div class="item__info">
-                  <p class="info__eps">Eps. 6</p>
-                  <p class="info__heading">Pandemic Becoming Endemic</p>
+              </div>
+              <div class="item__info">
+                <p class="info__eps">Eps. 6</p>
+                <p class="info__heading">Pandemic Becoming Endemic</p>
+                <div class="info__description-wrapper">
                   <p class="info__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
                   </p>
-                  <div class="info__block">
-                    <p class="block__text">Hosted by:</p>
-                    <img class="block__img" src="./images/avatar6.jpg" />
-                    <img class="block__img" src="./images/avatar5.jpg" />
-                  </div>
+                </div>
+                <div class="info__bottom">
+                  <p class="info__bottom-text">Hosted by:</p>
+                  <img
+                    class="info__bottom-img info__bottom-img_left"
+                    src="./images/avatar6.jpg"
+                  />
+                  <img
+                    class="info__bottom-img info__bottom-img_right"
+                    src="./images/avatar5.jpg"
+                  />
                 </div>
               </div>
             </li>
-            <li>
-              <div class="block__item">
-                <div class="item__poster-block">
-                  <img class="poster-block__img" src="./images/vw_cover.png" />
-                  <p class="poster-block__tag">automation</p>
-                  <p class="poster-block__tag">tech</p>
+            <li class="recent-episodes__item">
+              <div class="item__poster-block">
+                <img class="poster-block__img" src="./images/vw_cover.png" />
+                <div class="poster__tags">
+                  <p class="poster__tag">automation</p>
+                  <p class="poster__tag">tech</p>
                 </div>
-                <div class="item__info">
-                  <p class="info__eps">Eps. 5</p>
-                  <p class="info__heading">Tesla Autopilot Controversy</p>
+              </div>
+              <div class="item__info">
+                <p class="info__eps">Eps. 5</p>
+                <p class="info__heading">Tesla Autopilot Controversy</p>
+                <div class="info__description-wrapper">
                   <p class="info__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
                   </p>
-                  <div class="info__block">
-                    <p class="block__text">Hosted by:</p>
-                    <img class="block__img" src="./images/avatar6.jpg" />
-                    <img class="block__img" src="./images/avatar5.jpg" />
-                  </div>
+                </div>
+                <div class="info__bottom">
+                  <p class="info__bottom-text">Hosted by:</p>
+                  <img
+                    class="info__bottom-img info__bottom-img_left"
+                    src="./images/avatar6.jpg"
+                  />
+                  <img
+                    class="info__bottom-img info__bottom-img_right"
+                    src="./images/avatar5.jpg"
+                  />
                 </div>
               </div>
             </li>
-            <li>
-              <div class="block__item">
-                <div class="item__poster-block">
-                  <img
-                    class="poster-block__img"
-                    src="./images/rights_cover.png"
-                  />
-                  <p class="poster-block__tag">women's rights</p>
+            <li class="recent-episodes__item">
+              <div class="item__poster-block">
+                <img
+                  class="poster-block__img"
+                  src="./images/rights_cover.png"
+                />
+                <div class="poster__tags">
+                  <p class="poster__tag">women's rights</p>
                 </div>
-                <div class="item__info">
-                  <p class="info__eps">Eps. 4</p>
-                  <p class="info__heading">Women's rights? Is it alright?</p>
+              </div>
+              <div class="item__info">
+                <p class="info__eps">Eps. 4</p>
+                <p class="info__heading">Women's rights? Is it alright?</p>
+                <div class="info__description-wrapper">
                   <p class="info__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
                   </p>
-                  <div class="info__block">
-                    <p class="block__text">Hosted by:</p>
-                    <img class="block__img" src="./images/avatar6.jpg" />
-                    <img class="block__img" src="./images/avatar5.jpg" />
-                  </div>
+                </div>
+                <div class="info__bottom">
+                  <p class="info__bottom-text">Hosted by:</p>
+                  <img
+                    class="info__bottom-img info__bottom-img_left"
+                    src="./images/avatar6.jpg"
+                  />
+                  <img
+                    class="info__bottom-img info__bottom-img_right"
+                    src="./images/avatar5.jpg"
+                  />
                 </div>
               </div>
             </li>
-            <li>
-              <div class="block__item">
-                <div class="item__poster-block">
-                  <img
-                    class="poster-block__img"
-                    src="./images/self_confidence_cover.png"
-                  />
-                  <p class="poster-block__tag">self-esteem</p>
-                  <p class="poster-block__tag">health</p>
+            <li class="recent-episodes__item">
+              <div class="item__poster-block">
+                <img
+                  class="poster-block__img"
+                  src="./images/self_confidence_cover.png"
+                />
+                <div class="poster__tags">
+                  <p class="poster__tag">self-esteem</p>
+                  <p class="poster__tag">health</p>
                 </div>
-                <div class="item__info">
-                  <p class="info__eps">Eps. 3</p>
-                  <p class="info__heading">How to Deal with Self-Confidence</p>
+              </div>
+              <div class="item__info">
+                <p class="info__eps">Eps. 3</p>
+                <p class="info__heading">How to Deal with Self-Confidence</p>
+                <div class="info__description-wrapper">
                   <p class="info__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
                   </p>
-                  <div class="info__block">
-                    <p class="block__text">Hosted by:</p>
-                    <img class="block__img" src="./images/avatar6.jpg" />
-                    <img class="block__img" src="./images/avatar5.jpg" />
-                  </div>
+                </div>
+
+                <div class="info__bottom">
+                  <p class="info__bottom-text">Hosted by:</p>
+                  <img
+                    class="info__bottom-img info__bottom-img_left"
+                    src="./images/avatar6.jpg"
+                  />
+                  <img
+                    class="info__bottom-img info__bottom-img_right"
+                    src="./images/avatar5.jpg"
+                  />
                 </div>
               </div>
             </li>
-            <li>
-              <div class="block__item">
-                <div class="item__poster-block">
-                  <img
-                    class="poster-block__img"
-                    src="./images/shop_cart_cover.png"
-                  />
-                  <p class="poster-block__tag">social class</p>
-                  <p class="poster-block__tag">wealth</p>
+            <li class="recent-episodes__item">
+              <div class="item__poster-block">
+                <img
+                  class="poster-block__img"
+                  src="./images/shop_cart_cover.png"
+                />
+                <div class="poster__tags">
+                  <p class="poster__tag">social class</p>
+                  <p class="poster__tag">wealth</p>
                 </div>
-                <div class="item__info">
-                  <p class="info__eps">Eps. 2</p>
-                  <p class="info__heading">Type of Social Classes of People</p>
+              </div>
+              <div class="item__info">
+                <p class="info__eps">Eps. 2</p>
+                <p class="info__heading">Type of Social Classes of People</p>
+                <div class="info__description-wrapper">
                   <p class="info__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
                   </p>
-                  <div class="info__block">
-                    <p class="block__text">Hosted by:</p>
-                    <img class="block__img" src="./images/avatar6.jpg" />
-                    <img class="block__img" src="./images/avatar5.jpg" />
-                  </div>
+                </div>
+                <div class="info__bottom">
+                  <p class="info__bottom-text">Hosted by:</p>
+                  <img
+                    class="info__bottom-img info__bottom-img_left"
+                    src="./images/avatar6.jpg"
+                  />
+                  <img
+                    class="info__bottom-img info__bottom-img_right"
+                    src="./images/avatar5.jpg"
+                  />
                 </div>
               </div>
             </li>
-            <li>
-              <div class="block__item">
-                <div class="item__poster-block">
-                  <img
-                    class="poster-block__img"
-                    src="./images/mind_cover.png"
-                  />
-                  <p class="poster-block__tag">mind-behaviour</p>
-                  <p class="poster-block__tag">health</p>
+            <li class="recent-episodes__item">
+              <div class="item__poster-block">
+                <img class="poster-block__img" src="./images/mind_cover.png" />
+                <div class="poster__tags">
+                  <p class="poster__tag">mind-behaviour</p>
+                  <p class="poster__tag">health</p>
                 </div>
-                <div class="item__info">
-                  <p class="info__eps">Eps. 1</p>
-                  <p class="info__heading">Are you a Perplexed Mind Person?</p>
+              </div>
+              <div class="item__info">
+                <p class="info__eps">Eps. 1</p>
+                <p class="info__heading">Are you a Perplexed Mind Person?</p>
+                <div class="info__description-wrapper">
                   <p class="info__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur ac ultrices odio.
                   </p>
-                  <div class="info__block">
-                    <p class="block__text">Hosted by:</p>
-                    <img class="block__img" src="./images/avatar6.jpg" />
-                    <img class="block__img" src="./images/avatar5.jpg" />
-                  </div>
+                </div>
+                <div class="info__bottom">
+                  <p class="info__bottom-text">Hosted by:</p>
+                  <img
+                    class="info__bottom-img info__bottom-img_left"
+                    src="./images/avatar6.jpg"
+                  />
+                  <img
+                    class="info__bottom-img info__bottom-img_right"
+                    src="./images/avatar5.jpg"
+                  />
                 </div>
               </div>
             </li>
