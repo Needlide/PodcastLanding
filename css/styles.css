@@ -1764,7 +1764,7 @@ ul {
 
 /*------------------------------------MODAL-----------------------------*/
 
-.modal-outside {
+.main-modal {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1772,9 +1772,14 @@ ul {
   top: 0;
   left: 0;
   display: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--white-color);
   margin: 0 auto;
   border: 1px solid var(--text-color-davys-grey);
@@ -1992,10 +1997,8 @@ ul {
 }
 
 #modalContainer {
-  display: none;
   position: fixed;
   top: 0%;
-  left: 12.3%;
 }
 
 /*-----------------------------------------------------------------------*/

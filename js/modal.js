@@ -1,4 +1,5 @@
 document.write(`
+<div id="mainModal" class="main-modal">
 <div id="modalContainer" class="modal modal-container">
 <div id="closeModal" class="close-wrapper">
 <p class="close-modal">X</p>
@@ -50,5 +51,6 @@ document.write(`
             </div>
         </div>
     </form>
+</div>
 </div>
 `);
