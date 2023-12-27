@@ -53,8 +53,10 @@
         </ul>
       </nav>
       <div class="actions">
-        <a class="actions__recent-episodes" href="#">recent episodes</a>
-        <a class="actions__subscribe" href="#">subscribe</a>
+        <a class="actions__recent-episodes" href="#scrollHereEpisodes"
+          >recent episodes</a
+        >
+        <a class="actions__subscribe" href="#scrollHere">subscribe</a>
       </div>
     </header>
     <main>
@@ -72,7 +74,7 @@
             <p class="hero__text">
               We cover all kinds of categories and a weekly special guest.
             </p>
-            <a class="hero__link" href="#">subscribe</a>
+            <a class="hero__link" href="#scrollHere">subscribe</a>
           </div>
           <div class="hero__block hero__block_right">
             <svg class="hero__svg">
@@ -110,17 +112,17 @@
           <ul class="supporters__list">
             <li class="list__item">
               <svg class="list__svg">
-                <use xlink:href="./icons/icons.svg#icon-spotify" />
+                <use xlink:href="./icons/icons.svg#icon-Spotify" />
               </svg>
             </li>
             <li class="list__item">
               <svg class="list__svg">
-                <use xlink:href="./icons/icons.svg#icon-google-podcast" />
+                <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
               </svg>
             </li>
             <li class="list__item">
               <svg class="list__svg">
-                <use xlink:href="./icons/icons.svg#icon-youtube" />
+                <use xlink:href="./icons/icons.svg#icon-Youtube" />
               </svg>
             </li>
           </ul>
@@ -232,7 +234,7 @@
                     </div>
                     <p class="feedbacks__bottom-text">Luna lovegood,</p>
                     <svg class="feedbacks__bottom-svg">
-                      <use xlink:href="./icons/icons.svg#icon-spotify" />
+                      <use xlink:href="./icons/icons.svg#icon-Spotify" />
                     </svg>
                   </div>
                 </div>
@@ -255,7 +257,7 @@
                     </div>
                     <p class="feedbacks__bottom-text">Emily Blunt,</p>
                     <svg class="feedbacks__bottom-svg">
-                      <use xlink:href="./icons/icons.svg#icon-google-podcast" />
+                      <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
                     </svg>
                   </div>
                 </div>
@@ -278,7 +280,7 @@
                     </div>
                     <p class="feedbacks__bottom-text">Mia Winters,</p>
                     <svg class="feedbacks__bottom-svg">
-                      <use xlink:href="./icons/icons.svg#icon-youtube" />
+                      <use xlink:href="./icons/icons.svg#icon-Youtube" />
                     </svg>
                   </div>
                 </div>
@@ -286,12 +288,16 @@
             </li>
           </ul>
           <div class="navigation-container">
-            <svg class="navigation-left block__svg">
-              <use xlink:href="./icons/icons.svg#icon-arrow-left" />
-            </svg>
-            <svg class="navigation-right block__svg">
-              <use xlink:href="./icons/icons.svg#icon-arrow-right" />
-            </svg>
+            <div class="navigation-left">
+              <svg class="block__svg">
+                <use xlink:href="./icons/icons.svg#icon-arrow-right" />
+              </svg>
+            </div>
+            <div class="navigation-right">
+              <svg class="block__svg">
+                <use xlink:href="./icons/icons.svg#icon-arrow-right" />
+              </svg>
+            </div>
           </div>
         </div>
         <svg class="design__svg quote_scribble">
@@ -385,13 +391,13 @@
           </ul>
         </div>
         <div class="membership__btn-wrapper">
-          <a class="membership__btn">See pricing</a>
+          <a class="membership__btn" href="#scrollHere">See pricing</a>
         </div>
         <svg class="design__svg quote_scribble">
           <use xlink:href="./icons/icons.svg#icon-scribble3" />
         </svg>
       </section>
-      <section class="recent-episodes container">
+      <section id="scrollHereEpisodes" class="recent-episodes container">
         <div class="recent-episodes__heading-wrapper">
           <h2 class="recent-episodes__heading">Recent Episodes</h2>
           <p class="recent-episodes__text">
@@ -609,7 +615,7 @@
           <use xlink:href="./icons/icons.svg#icon-scribble3" />
         </svg>
       </section>
-      <section class="sponsor container">
+      <section id="scrollHere" class="sponsor container">
         <div class="sponsor__heading-wrapper">
           <svg class="sponsor__svg svg-header">
             <use xlink:href="./icons/icons.svg#icon-sparkle" />
@@ -630,7 +636,11 @@
                   tempor.
                 </p>
                 <div class="item-info__price-block">
-                  <button id="subscribe_btn" class="price-block__btn">
+                  <button
+                    id="subscribe_btn"
+                    class="price-block__btn"
+                    onclick="openModal()"
+                  >
                     Subscribe
                   </button>
                   <div class="price-block__price">
@@ -668,7 +678,11 @@
                   tempor.
                 </p>
                 <div class="item-info__price-block">
-                  <button id="subscribe_btn" class="price-block__btn">
+                  <button
+                    id="subscribe_btn"
+                    class="price-block__btn"
+                    onclick="openModal()"
+                  >
                     Subscribe
                   </button>
                   <div class="price-block__price">
@@ -706,7 +720,11 @@
                   tempor.
                 </p>
                 <div class="item-info__price-block">
-                  <button id="subscribe_btn" class="price-block__btn">
+                  <button
+                    id="subscribe_btn"
+                    class="price-block__btn"
+                    onclick="openModal()"
+                  >
                     Subscribe
                   </button>
                   <div class="price-block__price">
@@ -827,7 +845,13 @@
             <svg class="center-block__svg">
               <use xlink:href="./icons/icons.svg#icon-sparkle" />
             </svg>
-            <button class="center-block__button">download now</button>
+            <button
+              class="center-block__button"
+              id="openModalButton"
+              onclick="openModal()"
+            >
+              download now
+            </button>
           </div>
           <p class="center-block__bottom-text">Content also available on:</p>
           <ul class="center-block__list">
@@ -918,19 +942,25 @@
             </p>
             <ul class="footer-right__logos-list">
               <li class="logos-list__item">
-                <svg class="footer-right__svg">
-                  <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
-                </svg>
+                <a href="#">
+                  <svg class="footer-right__svg">
+                    <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
+                  </svg>
+                </a>
               </li>
               <li class="logos-list__item">
-                <svg class="footer-right__svg">
-                  <use xlink:href="./icons/icons.svg#icon-Spotify" />
-                </svg>
+                <a href="#">
+                  <svg class="footer-right__svg">
+                    <use xlink:href="./icons/icons.svg#icon-Spotify" />
+                  </svg>
+                </a>
               </li>
               <li class="logos-list__item">
-                <svg class="footer-right__svg">
-                  <use xlink:href="./icons/icons.svg#icon-Youtube" />
-                </svg>
+                <a href="#">
+                  <svg class="footer-right__svg">
+                    <use xlink:href="./icons/icons.svg#icon-Youtube" />
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -938,14 +968,18 @@
             <p class="footer-right-logos__text-bottom">App available on:</p>
             <ul class="footer-right-logos__item">
               <li>
-                <svg class="footer-right__svg-bottom">
-                  <use xlink:href="./icons/icons.svg#icon-app-store" />
-                </svg>
+                <a href="#">
+                  <svg class="footer-right__svg-bottom">
+                    <use xlink:href="./icons/icons.svg#icon-app-store" />
+                  </svg>
+                </a>
               </li>
               <li>
-                <svg class="footer-right__svg-bottom">
-                  <use xlink:href="./icons/icons.svg#icon-google-play" />
-                </svg>
+                <a href="#">
+                  <svg class="footer-right__svg-bottom">
+                    <use xlink:href="./icons/icons.svg#icon-google-play" />
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -963,5 +997,32 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+
+    <script>
+      document
+        .getElementById("closeModal")
+        .addEventListener("click", closeModal);
+
+      function openModal() {
+        console.log("openModal beginning");
+        document.getElementById("modalContainer").style.display = "block";
+        <!-- document.getElementById("closeModal").addEventListener("click", closeOnOutsideClick); -->
+        console.log("openModal end");
+      }
+
+      function closeModal() {
+        console.log("closeModal beginning");
+        document.getElementById("modalContainer").style.display = "none";
+        console.log("closeModal end");
+      }
+
+      function closeOnOutsideClick(event) {
+        console.log("closeOnOutsideClick beginning");
+        closeModal();
+        console.log("closeOnOutsideClick end");
+      }
+    </script>
   </body>
 </html>

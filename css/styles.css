@@ -8,6 +8,10 @@
   --shadow-color-pewter-blue: #81adc8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: var(--white-color);
@@ -198,7 +202,7 @@ ul {
   height: 114%;
   position: relative;
   top: -20%;
-  left: 0%;
+  left: -3%;
 }
 
 .hero__block {
@@ -288,7 +292,7 @@ ul {
 .hero__supporters {
   width: 1160px;
   display: flex;
-  gap: 9.6%;
+  justify-content: space-between;
   align-items: center;
   margin: 120px auto 0;
   border-top: var(--text-color-davys-grey) 1px solid;
@@ -307,10 +311,13 @@ ul {
 .supporters__list {
   display: flex;
   gap: 20px;
+  width: 60%;
+  justify-content: space-between;
+  margin-right: 73px;
 }
 
 .list__svg {
-  width: 275px;
+  width: 130px;
   height: auto;
 }
 
@@ -398,31 +405,31 @@ ul {
 }
 
 .cloud1 {
-bottom: 104.75px;
-right: 142.22px;
-width: 12.78px;
-height: 10.25px;
+  bottom: 104.75px;
+  right: 142.22px;
+  width: 12.78px;
+  height: 10.25px;
 }
 
 .cloud2 {
-bottom: 108.47px;
-right: 93.12px;
-width: 24.8px;
-height: 22.9px;
+  bottom: 108.47px;
+  right: 93.12px;
+  width: 24.8px;
+  height: 22.9px;
 }
 
 .cloud3 {
-top: 0px;
-right: 0px;
-width: 168px;
-height: 135px;
+  top: 0px;
+  right: 0px;
+  width: 168px;
+  height: 135px;
 }
 
 .head-svg {
   bottom: 16px;
-left: 43px;
-width: 64px;
-height: 100px;
+  left: 43px;
+  width: 64px;
+  height: 100px;
 }
 
 .quote {
@@ -667,10 +674,12 @@ height: 100px;
   width: 48px;
   height: 48px;
   color: var(--black-color);
+  transform: scale(-1, 1);
 }
 
 .navigation-left:hover,
 .navigation-left:focus {
+  /* filter: brightness(0) saturate(100%) invert(30%) sepia(57%) saturate(1654%) hue-rotate(338deg) brightness(99%) contrast(91%); */
   color: var(--text-color-vermillion);
   transition: color 300ms;
 }
@@ -1279,7 +1288,7 @@ height: 100px;
 
 .article-news__article {
   border-radius: 8px;
-  border: 2px solid var(--Black, #000);
+  border: 2px solid var(--black-color);
   background: #fff;
   padding: 16px;
   width: 570px;
@@ -1744,7 +1753,7 @@ height: 100px;
 }
 
 .footer-dot::before {
-  content: '\00B7'; /* Unicode for middle dot character */
+  content: "\00B7"; /* Unicode for middle dot character */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1752,3 +1761,241 @@ height: 100px;
 }
 
 /*----------------------------------------------------------------------*/
+
+/*------------------------------------MODAL-----------------------------*/
+
+.modal-outside {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modal {
+  background-color: var(--white-color);
+  margin: 0 auto;
+  border: 1px solid var(--text-color-davys-grey);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 3;
+}
+
+.modal-container {
+  width: 1440px;
+  height: auto /*1125px*/;
+  position: relative;
+}
+
+.close-wrapper {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  color: var(--black-color);
+}
+
+.close-wrapper:hover {
+  color: var(--text-color-vermillion);
+}
+
+.close-modal {
+  font-size: 24px;
+}
+
+.modal__header-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal__header-svg {
+  position: absolute;
+  right: 500px;
+  top: -80px;
+  width: 80px;
+  height: auto;
+  transform: rotate(13.874deg);
+  flex-shrink: 0;
+}
+
+.modal__header-heading {
+  color: var(--black-color);
+  font-size: 59.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 71.16px */
+  letter-spacing: -1.186px;
+}
+
+.modal__header-text {
+  color: var(--text-color-davys-grey);
+  font-size: 22.65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 36.24px */
+  margin-top: 20px;
+}
+
+.modal__content {
+  position: relative;
+  width: 766px;
+  height: auto /*658px*/;
+  border-top: 1px solid var(--text-color-davys-grey);
+  margin: 60px auto 0px;
+}
+
+.modal__svg {
+  position: absolute;
+}
+
+.modal-content__flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 20px;
+  column-gap: 40px;
+  margin-top: 40px;
+}
+
+.modal__item {
+  width: fit-content;
+  height: auto;
+}
+
+.modal__item-msg {
+  margin-top: 40px;
+}
+
+.modal__label {
+  display: block;
+  color: var(--black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+}
+
+.modal-label__span {
+  color: var(--text-color-vermillion);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.modal__input {
+  margin-top: 16px;
+  padding: 19px 112px 19px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--black-color);
+  background: var(--white-color);
+}
+
+.modal__input:active,
+.modal__input:focus,
+.modal__input:hover {
+  border: 1px solid var(--text-color-vermillion);
+}
+
+.modal__input-msg {
+  padding: 20px 531px 119px 20px;
+}
+
+.modal__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.modal__text {
+  color: var(--black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin-right: auto;
+}
+
+.modal__button-wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.modal__button {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+
+  color: var(--black-color);
+  background-color: var(--white-color);
+  padding: 20px 36px;
+  border-radius: 8px;
+  border: 2px solid var(--black-color);
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+  color: var(--white-color);
+  background-color: var(--black-color);
+  transition: box-shadow 100ms;
+  transition: background-color 300ms;
+  transition: color 150ms;
+}
+
+.modal-bottom__link-wrapper {
+  margin-left: 90px;
+  width: 186px;
+  height: auto;
+}
+
+.modal__link {
+  color: var(--black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-decoration-line: underline;
+}
+
+.modal__link:hover,
+.modal__link:focus {
+  color: var(--text-color-vermillion);
+}
+
+.modal-right_svg {
+  right: -200px;
+  top: -20px;
+  width: 78px;
+  height: auto;
+}
+
+.modal-left_svg {
+  left: -300px;
+  bottom: 140px;
+  width: 120px;
+  height: 120px;
+}
+
+#modalContainer {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 12.3%;
+}
+
+/*-----------------------------------------------------------------------*/
