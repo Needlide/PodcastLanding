@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var gallerySwiper = new Swiper(".hero__gallery", {
-    slidesPerView: 3,
-    spaceBetween: 0.001,
+    slidesPerView: 4,
+    spaceBetween: 20,
     loop: true,
   });
 

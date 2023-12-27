@@ -28,108 +28,115 @@
     <script src="./js/swiper.js" type="text/javascript"></script>
   </head>
   <body>
-    <header class="header container">
-      <a class="header__logo svg-container" href="#">
-        <svg class="logo">
-          <use xlink:href="./icons/icons.svg#icon-logo" />
-        </svg>
-      </a>
-      <nav class="main-nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Episodes</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">About</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link svg-container" href="#"
-              >More
-              <svg class="nav__svg">
-                <use xlink:href="./icons/icons.svg#icon-arrow-down" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="actions">
-        <a class="actions__recent-episodes" href="#scrollHereEpisodes"
-          >recent episodes</a
-        >
-        <a class="actions__subscribe" href="#scrollHere">subscribe</a>
+    <header class="header">
+      <div class="header-container container">
+        <a class="header__logo svg-container" href="#">
+          <svg class="logo">
+            <use xlink:href="./icons/icons.svg#icon-logo" />
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Episodes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link svg-container" href="#"
+                >More
+                <svg class="nav__svg">
+                  <use xlink:href="./icons/icons.svg#icon-arrow-down" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a class="actions__recent-episodes" href="#scrollHereEpisodes"
+            >recent episodes</a
+          >
+          <a class="actions__subscribe" href="#scrollHere">subscribe</a>
+        </div>
       </div>
     </header>
     <main>
-      <section class="hero container">
-        <div class="hero__main">
-          <div class="hero__block hero__block_left">
-            <svg class="hero-swirl">
-              <use xlink:href="./icons/icons.svg#icon-Hero-Shape-Swirl" />
-            </svg>
-          </div>
-          <div class="hero__block hero__block_center">
-            <h1 class="hero__heading">
-              Your Daily <span class="hero__heading-span">Podcast</span>
-            </h1>
-            <p class="hero__text">
-              We cover all kinds of categories and a weekly special guest.
-            </p>
-            <a class="hero__link" href="#scrollHere">subscribe</a>
-          </div>
-          <div class="hero__block hero__block_right">
-            <svg class="hero__svg">
-              <use xlink:href="./icons/icons.svg#icon-stars-hero" />
-            </svg>
-          </div>
-        </div>
-        <div class="hero__gallery swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <img
-                class="gallery__cover"
-                src="./images/self_confidence_cover.png"
-              />
-            </li>
-            <li class="swiper-slide">
-              <img class="gallery__cover" src="./images/shop_cart_cover.png" />
-            </li>
-            <li class="swiper-slide">
-              <img class="gallery__cover" src="./images/vw_cover.png" />
-            </li>
-            <li class="swiper-slide">
-              <img class="gallery__cover" src="./images/rights_cover.png" />
-            </li>
-            <li class="swiper-slide">
-              <img class="gallery__cover" src="./images/mind_cover.png" />
-            </li>
-            <li class="swiper-slide">
-              <img class="gallery__cover" src="./images/covid_cover.png" />
-            </li>
-          </ul>
-        </div>
-        <div class="hero__supporters">
-          <p class="supporters__text">Supported by:</p>
-          <ul class="supporters__list">
-            <li class="list__item">
-              <svg class="list__svg">
-                <use xlink:href="./icons/icons.svg#icon-Spotify" />
+      <section class="hero">
+        <div class="hero-container container">
+          <div class="hero__main">
+            <div class="hero__block hero__block_left">
+              <svg class="hero-swirl">
+                <use xlink:href="./icons/icons.svg#icon-Hero-Shape-Swirl" />
               </svg>
-            </li>
-            <li class="list__item">
-              <svg class="list__svg">
-                <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
+            </div>
+            <div class="hero__block hero__block_center">
+              <h1 class="hero__heading">
+                Your Daily <span class="hero__heading-span">Podcast</span>
+              </h1>
+              <p class="hero__text">
+                We cover all kinds of categories and a weekly special guest.
+              </p>
+              <a class="hero__link" href="#scrollHere">subscribe</a>
+            </div>
+            <div class="hero__block hero__block_right">
+              <svg class="hero__svg">
+                <use xlink:href="./icons/icons.svg#icon-stars-hero" />
               </svg>
-            </li>
-            <li class="list__item">
-              <svg class="list__svg">
-                <use xlink:href="./icons/icons.svg#icon-Youtube" />
-              </svg>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="hero__gallery swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide slider-wrapper">
+                <img
+                  class="gallery__cover"
+                  src="./images/self_confidence_cover.png"
+                />
+              </li>
+              <li class="swiper-slide slider-wrapper">
+                <img
+                  class="gallery__cover"
+                  src="./images/shop_cart_cover.png"
+                />
+              </li>
+              <li class="swiper-slide slider-wrapper">
+                <img class="gallery__cover" src="./images/vw_cover.png" />
+              </li>
+              <li class="swiper-slide slider-wrapper">
+                <img class="gallery__cover" src="./images/rights_cover.png" />
+              </li>
+              <li class="swiper-slide slider-wrapper">
+                <img class="gallery__cover" src="./images/mind_cover.png" />
+              </li>
+              <li class="swiper-slide slider-wrapper">
+                <img class="gallery__cover" src="./images/covid_cover.png" />
+              </li>
+            </ul>
+          </div>
+          <div class="hero__supporters">
+            <p class="supporters__text">Supported by:</p>
+            <ul class="supporters__list">
+              <li class="list__item">
+                <svg class="list__svg">
+                  <use xlink:href="./icons/icons.svg#icon-Spotify" />
+                </svg>
+              </li>
+              <li class="list__item">
+                <svg class="list__svg">
+                  <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
+                </svg>
+              </li>
+              <li class="list__item">
+                <svg class="list__svg">
+                  <use xlink:href="./icons/icons.svg#icon-Youtube" />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <svg class="design__svg">
+            <use xlink:href="./icons/icons.svg#icon-scribble3" />
+          </svg>
         </div>
-        <svg class="design__svg">
-          <use xlink:href="./icons/icons.svg#icon-scribble3" />
-        </svg>
       </section>
       <section class="description container">
         <div class="description__top">
