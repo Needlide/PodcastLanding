@@ -179,9 +179,6 @@ ul {
   padding-top: 64px;
   padding-bottom: 140px;
   background-color: var(--background-color-champagne);
-}
-
-.hero-container {
   position: relative;
 }
 
@@ -336,7 +333,7 @@ ul {
 .design__svg {
   position: absolute;
   bottom: -75px;
-  left: 570px;
+  left: calc(50% - 150px);
   z-index: 1;
 }
 
@@ -557,12 +554,9 @@ ul {
 }
 
 .quote_scribble {
-  width: 150px;
-  height: 150px;
   position: absolute;
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%)
     contrast(100%);
-  left: 645px;
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -579,8 +573,8 @@ ul {
   width: 105px;
   height: 105px;
   position: absolute;
-  left: 285px;
-  top: 70px;
+  left: 27%;
+  top: 7%;
 }
 
 .feedbacks__heading {
@@ -648,6 +642,7 @@ ul {
   display: flex;
   align-items: center;
   margin-top: 32px;
+  gap: 10px;
 }
 
 .bottom-img-wrapper {
@@ -676,6 +671,10 @@ ul {
 .feedbacks__bottom-svg {
   width: 77px;
   height: 48px;
+}
+
+.google-svg {
+  width: 141px;
 }
 
 .navigation-container {
@@ -871,8 +870,8 @@ ul {
   position: absolute;
   width: 240px;
   height: 240px;
-  right: 0;
-  top: 200px;
+  right: 12%;
+  top: 15%;
 }
 
 .recent-episodes__block {
@@ -1040,8 +1039,8 @@ ul {
 .svg-header {
   width: 120px;
   height: 120px;
-  left: 340px;
-  top: -60px;
+  left: 23%;
+  top: -50%;
   transform: scale(-1, 1);
 }
 
@@ -1289,10 +1288,28 @@ ul {
   position: relative;
   width: fit-content;
   margin: 100px auto 0;
+  z-index: 2;
 }
 
 .article-news__svg {
   position: absolute;
+}
+
+.article-news_svg-left {
+width: 185px;
+height: 185px;
+left: -7%;
+top: -11%;
+transform: rotate(21.967deg);
+z-index: 1;
+}
+
+.article-news_svg-right {
+width: 240px;
+height: 240px;
+right: -15%;
+bottom: -20%;
+transform: rotate(135deg);
 }
 
 .article-news__article {
@@ -1383,13 +1400,6 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 19.2px */
-}
-
-.news_scribble {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 645px;
 }
 
 /*----------------------------------------------------------------------*/
