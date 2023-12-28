@@ -14,4 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".navigation-left",
     },
   });
+
+  var feedbacksVerticalSwiper = new Swiper(".feedbacks-list-vertical", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    direction: "vertical",
+    loop: true,
+  });
 });
