@@ -1,83 +1,1184 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>PodOfCast</title>
-		<link rel="stylesheet" type="text/css" href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="./css/styles.scss"/>
-	</head>
-	<body class="main-page">
-		<header class="main-page__header">
-			<a class="header__logo" href="#">
-				<svg>
-					<use xlink:href="./icons/icons.svg#icon-logo"/>
-				</svg>
-			</a>
-			<nav class="header__nav">
-				<ul class="nav__list">
-					<li>
-						<a href="#">Episodes</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">More</a>
-						<svg>
-							<use xlink:href="./icons/icons.svg#icon-arrow-down"/>
-						</svg>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__actions">
-				<button class="actions__recent-episodes">recent episodes</button>
-				<button class="actions__subscribe">subscribe</button>
-			</div>
-		</header>
-		<main>
-			<section class="main-page__hero">
-				
-			</section>
-			<section class="main-page__gallery">
-				
-			</section>
-			<section class="main-page__supporters">
-				
-			</section>
-			<section class="main-page__description">
-				
-			</section>
-			<section class="main-page__quote">
-				
-			</section>
-			<section class="main-page__feedbacks">
-				
-			</section>
-			<section class="main-page__membership">
-				
-			</section>
-			<section class="main-page__recent-episodes">
-				
-			</section>
-			<section class="main-page__sponsor">
-				
-			</section>
-			<section class="main-page__article-news">
-				
-			</section>
-			<section class="main-page__app">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PodOfCast</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 
-			</section>
-		</main>
-		<footer class="main-page__footer">
-			
-		</footer>
-	</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a class="header__logo svg-container" href="#">
+          <svg class="logo">
+            <use xlink:href="./icons/icons.svg#icon-logo" />
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#scrollHereEpisodes">Episodes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#scrollHereEpisodes">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link svg-container" href="#scrollHere"
+                >More
+                <svg class="nav__svg">
+                  <use xlink:href="./icons/icons.svg#icon-arrow-down" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a class="actions__recent-episodes" href="#scrollHereEpisodes"
+            >recent episodes</a
+          >
+          <a class="actions__subscribe" href="#scrollHere">subscribe</a>
+        </div>
+
+        <nav class="main-nav-mobile" id="mobileMenu">
+          <ul class="nav__list list_mobile">
+            <li class="nav__item">
+              <a class="nav__link" href="#scrollHereEpisodes" onclick="openMenu()">Episodes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#scrollHereEpisodes" onclick="openMenu()">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link svg-container" href="#scrollHere" onclick="openMenu()">More</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#scrollHereEpisodes" onclick="openMenu()">Recent Episodes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#scrollHere" onclick="openMenu()">Subscribe</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="javascript:void(0);" class="burger-menu" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <svg class="hero-swirl">
+          <use xlink:href="./icons/icons.svg#icon-Hero-Shape-Swirl" />
+        </svg>
+        <svg class="hero__svg">
+          <use xlink:href="./icons/icons.svg#icon-stars-hero" />
+        </svg>
+
+        <div class="hero-container container">
+          <div class="hero__block hero__block_center">
+            <h1 class="hero__heading">
+              Your Daily <span class="hero__heading-span">Podcast</span>
+            </h1>
+            <p class="hero__text">
+              We cover all kinds of categories and a weekly special guest.
+            </p>
+            <a class="hero__link" href="#scrollHere">subscribe</a>
+          </div>
+        </div>
+        <div class="hero__gallery swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide slider-wrapper">
+              <img
+                class="gallery__cover"
+                src="./images/self_confidence_cover.png"
+              />
+            </li>
+            <li class="swiper-slide slider-wrapper">
+              <img class="gallery__cover" src="./images/shop_cart_cover.png" />
+            </li>
+            <li class="swiper-slide slider-wrapper">
+              <img class="gallery__cover" src="./images/vw_cover.png" />
+            </li>
+            <li class="swiper-slide slider-wrapper">
+              <img class="gallery__cover" src="./images/rights_cover.png" />
+            </li>
+            <li class="swiper-slide slider-wrapper">
+              <img class="gallery__cover" src="./images/mind_cover.png" />
+            </li>
+            <li class="swiper-slide slider-wrapper">
+              <img class="gallery__cover" src="./images/covid_cover.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="hero-container container">
+          <div class="hero__supporters">
+            <p class="supporters__text">Supported by:</p>
+            <ul class="supporters__list">
+              <li class="list__item">
+                <svg class="list__svg">
+                  <use xlink:href="./icons/icons.svg#icon-Spotify" />
+                </svg>
+              </li>
+              <li class="list__item">
+                <svg class="list__svg">
+                  <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
+                </svg>
+              </li>
+              <li class="list__item">
+                <svg class="list__svg">
+                  <use xlink:href="./icons/icons.svg#icon-Youtube" />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <svg class="design__svg">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
+      </section>
+      <section class="description">
+        <div class="container">
+          <div class="description__top">
+            <div class="heading__container">
+              <h2 class="description__heading">
+                Talk. Listen. Get inspired by every minute of it.
+              </h2>
+            </div>
+            <div class="description__info">
+              <div class="description__block block_left">
+                <div class="svg-container-description">
+                  <svg class="block__svg cloud1">
+                    <use xlink:href="./icons/icons.svg#icon-cloud1" />
+                  </svg>
+                  <svg class="block__svg cloud2">
+                    <use xlink:href="./icons/icons.svg#icon-cloud2" />
+                  </svg>
+                  <svg class="block__svg cloud3">
+                    <use xlink:href="./icons/icons.svg#icon-cloud3" />
+                  </svg>
+                  <svg class="block__svg head-svg">
+                    <use xlink:href="./icons/icons.svg#icon-head" />
+                  </svg>
+                </div>
+                <p class="block__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur ac ultrices odio.
+                </p>
+              </div>
+              <div class="description__block block_right">
+                <div class="svg-container-description2">
+                  <svg class="block__svg">
+                    <use xlink:href="./icons/icons.svg#icon-lamp" />
+                  </svg>
+                </div>
+                <p class="block__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="quote">
+            <svg class="quote__svg quote__svg-left">
+              <use xlink:href="./icons/icons.svg#icon-swirl2" />
+            </svg>
+            <svg class="quote__svg quote__svg-right">
+              <use xlink:href="./icons/icons.svg#icon-star" />
+            </svg>
+            <div class="quote__block">
+              <p class="quote__text-decorative">“</p>
+              <div class="quote__heading-wrapper">
+                <h3 class="quote__heading">
+                  One of the best daily podcasts that covers every topic on
+                  Spotify.
+                </h3>
+              </div>
+              <div class="quote__bottom">
+                <div class="quote__user">
+                  <div class="quote__img-wrapper">
+                    <img class="block__img" src="./images/avatar1.jpg" />
+                  </div>
+                  <p class="block__text">John Smith,</p>
+                </div>
+                <div class="quote__platform">
+                  <svg class="platform__svg">
+                    <use xlink:href="./icons/icons.svg#icon-spotify-logo" />
+                  </svg>
+                  <p class="block__text text__bold">Social Community Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="design__svg quote_scribble">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
+      </section>
+      <section class="feedbacks">
+        <div class="container">
+          <div class="feedbacks__header-wrapper">
+            <svg class="feedbacks__svg">
+              <use xlink:href="./icons/icons.svg#icon-sparkle-full" />
+            </svg>
+            <h2 class="feedbacks__heading">What our listeners say</h2>
+            <p class="feedbacks__text">
+              Their experience throughout every platform
+            </p>
+          </div>
+          <div class="feedbacks-list swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="feedbacks-list__item">
+                  <div class="feedbacks-list-text-bottom-wrapper">
+                    <p class="feedbacks-list__decorative-text">“</p>
+                    <p class="feedbacks-list__description">
+                      Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                      eiusmod tempor incidi ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="feedbacks-list__bottom">
+                      <div class="bottom-img-wrapper">
+                        <img
+                          class="feedbacks__bottom-img"
+                          src="./images/avatar2.jpg"
+                        />
+                      </div>
+                      <p class="feedbacks__bottom-text">Luna lovegood,</p>
+                      <svg class="feedbacks__bottom-svg">
+                        <use xlink:href="./icons/icons.svg#icon-Spotify" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="feedbacks-list__item">
+                  <div class="feedbacks-list-text-bottom-wrapper">
+                    <p class="feedbacks-list__decorative-text">“</p>
+                    <p class="feedbacks-list__description">
+                      Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                      eiusmod tempor incidi ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="feedbacks-list__bottom">
+                      <div class="bottom-img-wrapper">
+                        <img
+                          class="feedbacks__bottom-img"
+                          src="./images/avatar3.jpg"
+                        />
+                      </div>
+                      <p class="feedbacks__bottom-text">Emily Blunt,</p>
+                      <svg class="feedbacks__bottom-svg google-svg">
+                        <use
+                          xlink:href="./icons/icons.svg#icon-Google-Podcast"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="feedbacks-list__item">
+                  <div class="feedbacks-list-text-bottom-wrapper">
+                    <p class="feedbacks-list__decorative-text">“</p>
+                    <p class="feedbacks-list__description">
+                      Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                      eiusmod tempor incidi ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="feedbacks-list__bottom">
+                      <div class="bottom-img-wrapper">
+                        <img
+                          class="feedbacks__bottom-img"
+                          src="./images/avatar4.jpg"
+                        />
+                      </div>
+                      <p class="feedbacks__bottom-text">Mia Winters,</p>
+                      <svg class="feedbacks__bottom-svg">
+                        <use xlink:href="./icons/icons.svg#icon-Youtube" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="navigation-container">
+              <div class="navigation-left">
+                <svg class="block__svg">
+                  <use xlink:href="./icons/icons.svg#icon-arrow-right" />
+                </svg>
+              </div>
+              <div class="navigation-right">
+                <svg class="block__svg">
+                  <use xlink:href="./icons/icons.svg#icon-arrow-right" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="feedbacks-list-vertical swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="feedbacks-list__item">
+                  <div class="feedbacks-list-text-bottom-wrapper">
+                    <p class="feedbacks-list__decorative-text">“</p>
+                    <p class="feedbacks-list__description">
+                      Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                      eiusmod tempor incidi ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="feedbacks-list__bottom">
+                      <div class="bottom-img-wrapper">
+                        <img
+                          class="feedbacks__bottom-img"
+                          src="./images/avatar2.jpg"
+                        />
+                      </div>
+                      <p class="feedbacks__bottom-text">Luna lovegood,</p>
+                      <svg class="feedbacks__bottom-svg">
+                        <use xlink:href="./icons/icons.svg#icon-Spotify" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="feedbacks-list__item">
+                  <div class="feedbacks-list-text-bottom-wrapper">
+                    <p class="feedbacks-list__decorative-text">“</p>
+                    <p class="feedbacks-list__description">
+                      Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                      eiusmod tempor incidi ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="feedbacks-list__bottom">
+                      <div class="bottom-img-wrapper">
+                        <img
+                          class="feedbacks__bottom-img"
+                          src="./images/avatar3.jpg"
+                        />
+                      </div>
+                      <p class="feedbacks__bottom-text">Emily Blunt,</p>
+                      <svg class="feedbacks__bottom-svg google-svg">
+                        <use
+                          xlink:href="./icons/icons.svg#icon-Google-Podcast"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="feedbacks-list__item">
+                  <div class="feedbacks-list-text-bottom-wrapper">
+                    <p class="feedbacks-list__decorative-text">“</p>
+                    <p class="feedbacks-list__description">
+                      Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                      eiusmod tempor incidi ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="feedbacks-list__bottom">
+                      <div class="bottom-img-wrapper">
+                        <img
+                          class="feedbacks__bottom-img"
+                          src="./images/avatar4.jpg"
+                        />
+                      </div>
+                      <p class="feedbacks__bottom-text">Mia Winters,</p>
+                      <svg class="feedbacks__bottom-svg">
+                        <use xlink:href="./icons/icons.svg#icon-Youtube" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <svg class="design__svg quote_scribble">
+            <use xlink:href="./icons/icons.svg#icon-scribble3" />
+          </svg>
+        </div>
+      </section>
+      <section class="membership">
+        <div class="container">
+          <div class="membership__heading-wrapper">
+            <svg class="membership__heading-svg">
+              <use xlink:href="./icons/icons.svg#icon-scribble1" />
+            </svg>
+            <h2 class="membership__heading">Membership benefits</h2>
+            <p class="membership__text">
+              Become our sponsor and get all benefits
+            </p>
+          </div>
+          <div class="membership__block">
+            <ul class="membership__list">
+              <li class="membership__list-item">
+                <div class="block__tile">
+                  <svg class="tile__svg">
+                    <use xlink:href="./icons/icons.svg#icon-scribble" />
+                  </svg>
+                  <h3 class="tile__heading">Topic by Request</h3>
+                  <p class="tile__text">
+                    Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+              </li>
+              <li class="membership__list-item">
+                <div class="block__tile">
+                  <svg class="tile__svg">
+                    <use xlink:href="./icons/icons.svg#icon-shining-stars" />
+                  </svg>
+                  <h3 class="tile__heading">Exclusive content</h3>
+                  <p class="tile__text">
+                    Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+              </li>
+              <li class="membership__list-item">
+                <div class="block__tile">
+                  <svg class="tile__svg">
+                    <use xlink:href="./icons/icons.svg#icon-face1" />
+                  </svg>
+                  <h3 class="tile__heading">Join the Community</h3>
+                  <p class="tile__text">
+                    Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+              </li>
+              <li class="membership__list-item">
+                <div class="block__tile">
+                  <svg class="tile__svg">
+                    <use xlink:href="./icons/icons.svg#icon-face2" />
+                  </svg>
+                  <h3 class="tile__heading">Livestreaming Access</h3>
+                  <p class="tile__text">
+                    Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+              </li>
+              <li class="membership__list-item">
+                <div class="block__tile">
+                  <svg class="tile__svg">
+                    <use xlink:href="./icons/icons.svg#icon-fire" />
+                  </svg>
+                  <h3 class="tile__heading">Exclusive Episodes & Merch</h3>
+                  <p class="tile__text">
+                    Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+              </li>
+              <li class="membership__list-item">
+                <div class="block__tile">
+                  <svg class="tile__svg">
+                    <use xlink:href="./icons/icons.svg#icon-star-sm" />
+                  </svg>
+                  <h3 class="tile__heading">And much more!</h3>
+                  <p class="tile__text">
+                    Lorem ipsum dolor sit amet consectet piscing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="membership__btn-wrapper">
+            <a class="membership__btn" href="#scrollHere">See pricing</a>
+          </div>
+        </div>
+        <svg class="design__svg quote_scribble">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
+      </section>
+      <section id="scrollHereEpisodes" class="recent-episodes">
+        <div class="container">
+          <div class="recent-episodes__heading-wrapper">
+            <h2 class="recent-episodes__heading">Recent Episodes</h2>
+            <p class="recent-episodes__text">
+              Available on your favorite platform
+            </p>
+          </div>
+          <div class="recent-episodes__block">
+            <svg class="recent-episodes__svg">
+              <use xlink:href="./icons/icons.svg#icon-sparkle" />
+            </svg>
+            <ul class="recent-episodes__list">
+              <li class="recent-episodes__item">
+                <div class="info__top">
+                  <img
+                    class="poster-block__img"
+                    src="./images/covid_cover.png"
+                  />
+                  <div class="item__info-text">
+                    <p class="info__eps">Eps. 6</p>
+                    <p class="info__heading">Pandemic Becoming Endemic</p>
+                    <div class="info__description-wrapper">
+                      <p class="info__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ac ultrices odio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__bottom">
+                  <div class="poster__tags">
+                    <p class="poster__tag">covid-19</p>
+                    <p class="poster__tag">health</p>
+                  </div>
+                  <div class="info__bottom-hosted">
+                    <p class="info__bottom-text">Hosted by:</p>
+                    <img
+                      class="info__bottom-img info__bottom-img_left"
+                      src="./images/avatar6.jpg"
+                    />
+                    <img
+                      class="info__bottom-img info__bottom-img_right"
+                      src="./images/avatar5.jpg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="recent-episodes__item">
+                <div class="info__top">
+                  <img class="poster-block__img" src="./images/vw_cover.png" />
+                  <div class="item__info-text">
+                    <p class="info__eps">Eps. 5</p>
+                    <p class="info__heading">Tesla Autopilot Controversy</p>
+                    <div class="info__description-wrapper">
+                      <p class="info__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ac ultrices odio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__bottom">
+                  <div class="poster__tags">
+                    <p class="poster__tag">automation</p>
+                    <p class="poster__tag">tech</p>
+                  </div>
+                  <div class="info__bottom-hosted">
+                    <p class="info__bottom-text">Hosted by:</p>
+                    <img
+                      class="info__bottom-img info__bottom-img_left"
+                      src="./images/avatar6.jpg"
+                    />
+                    <img
+                      class="info__bottom-img info__bottom-img_right"
+                      src="./images/avatar5.jpg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="recent-episodes__item">
+                <div class="info__top">
+                  <img
+                    class="poster-block__img"
+                    src="./images/rights_cover.png"
+                  />
+                  <div class="item__info-text">
+                    <p class="info__eps">Eps. 4</p>
+                    <p class="info__heading">Women's rights? Is it alright?</p>
+                    <div class="info__description-wrapper">
+                      <p class="info__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ac ultrices odio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__bottom">
+                  <div class="poster__tags">
+                    <p class="poster__tag">women's rights</p>
+                  </div>
+                  <div class="info__bottom-hosted">
+                    <p class="info__bottom-text">Hosted by:</p>
+                    <img
+                      class="info__bottom-img info__bottom-img_left"
+                      src="./images/avatar6.jpg"
+                    />
+                    <img
+                      class="info__bottom-img info__bottom-img_right"
+                      src="./images/avatar5.jpg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="recent-episodes__item">
+                <div class="info__top">
+                  <img
+                    class="poster-block__img"
+                    src="./images/self_confidence_cover.png"
+                  />
+                  <div class="item__info-text">
+                    <p class="info__eps">Eps. 3</p>
+                    <p class="info__heading">
+                      How to Deal with Self-Confidence
+                    </p>
+                    <div class="info__description-wrapper">
+                      <p class="info__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ac ultrices odio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__bottom">
+                  <div class="poster__tags">
+                    <p class="poster__tag">self-esteem</p>
+                    <p class="poster__tag">health</p>
+                  </div>
+                  <div class="info__bottom-hosted">
+                    <p class="info__bottom-text">Hosted by:</p>
+                    <img
+                      class="info__bottom-img info__bottom-img_left"
+                      src="./images/avatar6.jpg"
+                    />
+                    <img
+                      class="info__bottom-img info__bottom-img_right"
+                      src="./images/avatar5.jpg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="recent-episodes__item">
+                <div class="info__top">
+                  <img
+                    class="poster-block__img"
+                    src="./images/shop_cart_cover.png"
+                  />
+                  <div class="item__info-text">
+                    <p class="info__eps">Eps. 2</p>
+                    <p class="info__heading">
+                      Type of Social Classes of People
+                    </p>
+                    <div class="info__description-wrapper">
+                      <p class="info__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ac ultrices odio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__bottom">
+                  <div class="poster__tags">
+                    <p class="poster__tag">social class</p>
+                    <p class="poster__tag">wealth</p>
+                  </div>
+                  <div class="info__bottom-hosted">
+                    <p class="info__bottom-text">Hosted by:</p>
+                    <img
+                      class="info__bottom-img info__bottom-img_left"
+                      src="./images/avatar6.jpg"
+                    />
+                    <img
+                      class="info__bottom-img info__bottom-img_right"
+                      src="./images/avatar5.jpg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="recent-episodes__item">
+                <div class="info__top">
+                  <img
+                    class="poster-block__img"
+                    src="./images/mind_cover.png"
+                  />
+                  <div class="item__info-text">
+                    <p class="info__eps">Eps. 1</p>
+                    <p class="info__heading">
+                      Are you a Perplexed Mind Person?
+                    </p>
+                    <div class="info__description-wrapper">
+                      <p class="info__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ac ultrices odio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__bottom">
+                  <div class="poster__tags">
+                    <p class="poster__tag">mind-behaviour</p>
+                    <p class="poster__tag">health</p>
+                  </div>
+                  <div class="info__bottom-hosted">
+                    <p class="info__bottom-text">Hosted by:</p>
+                    <img
+                      class="info__bottom-img info__bottom-img_left"
+                      src="./images/avatar6.jpg"
+                    />
+                    <img
+                      class="info__bottom-img info__bottom-img_right"
+                      src="./images/avatar5.jpg"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <svg class="design__svg quote_scribble">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
+      </section>
+      <section id="scrollHere" class="sponsor">
+        <div class="container">
+          <div class="sponsor__heading-wrapper">
+            <div class="sponsor__header-wrapper">
+              <svg class="sponsor__svg svg-header">
+                <use xlink:href="./icons/icons.svg#icon-sparkle" />
+              </svg>
+              <h2 class="sponsor__heading">Become our sponsor</h2>
+              <p class="sponsor__text">
+                Get exclusive episodes, merch and more
+              </p>
+            </div>
+          </div>
+          <div class="sponsor__block">
+            <svg class="sponsor__svg block-top-svg">
+              <use xlink:href="./icons/icons.svg#icon-star" />
+            </svg>
+            <ul class="sponsor__block-list">
+              <li class="sponsor__list-info">
+                <div class="item-info__head">
+                  <p class="item-info__heading">Member</p>
+                  <p class="item-info__description">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                  <div class="item-info__price-block">
+                    <button
+                      id="subscribe_btn"
+                      class="price-block__btn"
+                      onclick="openModal()"
+                    >
+                      Subscribe
+                    </button>
+                    <div class="price-block__price">
+                      <p class="price__number">$9.99</p>
+                      <p class="price__period">/month</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sponsor__item-info sponsor__item-info1">
+                  <p class="item-info__heading1">What's included:</p>
+                  <ul class="item-info__list">
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Exclusive content</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">-5% Discount on Merch</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Join the Community</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Livestreaming Access</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sponsor__list-info">
+                <div class="item-info__head item-info_popular">
+                  <div class="item-info-head__popular">
+                    <p class="popular__heading">Family</p>
+                    <p class="popular__tag">most popular</p>
+                  </div>
+                  <p class="item-info__description">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                  <div class="item-info__price-block">
+                    <button
+                      id="subscribe_btn"
+                      class="price-block__btn"
+                      onclick="openModal()"
+                    >
+                      Subscribe
+                    </button>
+                    <div class="price-block__price">
+                      <p class="price__number">$14.99</p>
+                      <p class="price__period">/month</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sponsor__item-info item-info_popular">
+                  <p class="item-info__heading1">What's included:</p>
+                  <ul class="item-info__list">
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Everything in Tier 1</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Free tickets to Events</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Limited Edition Merch</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Promote your Product</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Request Topic</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sponsor__list-info">
+                <div class="item-info__head">
+                  <p class="item-info__heading">Official</p>
+                  <p class="item-info__description">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                  <div class="item-info__price-block">
+                    <button
+                      id="subscribe_btn"
+                      class="price-block__btn"
+                      onclick="openModal()"
+                    >
+                      Subscribe
+                    </button>
+                    <div class="price-block__price">
+                      <p class="price__number">$29.99</p>
+                      <p class="price__period">/month</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sponsor__item-info">
+                  <p class="item-info__heading1">What's included:</p>
+                  <ul class="item-info__list">
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Everything in Tier 2</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Exclusive Badge on Livestreaming</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Become an Official Sponsor</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Early Access to All Episodes</p>
+                    </li>
+                    <li class="sponsor-list__item">
+                      <p class="item__text">Free Stickers and Merch</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <svg class="sponsor__svg block-bottom-svg">
+              <use xlink:href="./icons/icons.svg#icon-swirl2" />
+            </svg>
+          </div>
+        </div>
+        <svg class="design__svg quote_scribble">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
+      </section>
+      <section class="article-news">
+        <div class="container">
+          <div class="article-news__header-wrapper">
+            <h2 class="article-news__heading">Article and News</h2>
+            <p class="article-news__text">News, tips, tricks and more</p>
+          </div>
+          <div class="article-news__block">
+            <svg class="article-news__svg article-news_svg-left">
+              <use xlink:href="./icons/icons.svg#icon-star-sm" />
+            </svg>
+            <article class="article-news__article">
+              <img class="article-news-img" src="./images/studio.jpg" />
+              <div class="article-news__head">
+                <p class="news-head__heading">Podcast</p>
+                <p class="news-head__text">Setup your own podcast</p>
+                <p class="news-head__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris...
+                </p>
+              </div>
+              <div class="news__tags">
+                <div class="tags-wrapper">
+                  <p class="tags__tag">business</p>
+                  <p class="tags__tag">startup</p>
+                </div>
+                <p class="tags__date">Sep 14, 2021</p>
+              </div>
+            </article>
+            <article class="article-news__article">
+              <img class="article-news-img" src="./images/doodle.jpg" />
+              <div class="article-news__head">
+                <p class="news-head__heading">Tips & Trick</p>
+                <p class="news-head__text">Doodle artwork 101</p>
+                <p class="news-head__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris...
+                </p>
+              </div>
+              <div class="news__tags">
+                <div class="tags-wrapper">
+                  <p class="tags__tag">art</p>
+                  <p class="tags__tag">creative</p>
+                  <p class="tags__tag">tips and trick</p>
+                </div>
+
+                <p class="tags__date">Sep 12, 2021</p>
+              </div>
+            </article>
+            <svg class="article-news__svg article-news_svg-right">
+              <use xlink:href="./icons/icons.svg#icon-scribble1" />
+            </svg>
+          </div>
+        </div>
+        <svg class="design__svg">
+          <use xlink:href="./icons/icons.svg#icon-scribble3" />
+        </svg>
+      </section>
+      <section class="app">
+        <div class="container">
+          <div class="app__left-block">
+            <svg class="left-block__svg left-block__first-svg">
+              <use xlink:href="./icons/icons.svg#icon-sparkle-full" />
+            </svg>
+            <svg class="left-block__svg left-block__second-svg">
+              <use xlink:href="./icons/icons.svg#icon-sparkle-full" />
+            </svg>
+            <svg class="left-block__svg left-block__third-svg">
+              <use xlink:href="./icons/icons.svg#icon-sparkle-full" />
+            </svg>
+            <img class="left-block__img" src="./images/home.png" />
+          </div>
+          <div class="app__center-block">
+            <p class="center-block__tag">beta</p>
+            <div class="center-block__heading-wrapper">
+              <h2 class="center-block__heading">
+                Available now Pod of Cast App
+              </h2>
+              <p class="center-block__text">
+                We just launched our podcast app!
+              </p>
+            </div>
+            <div class="center-block__button-wrapper">
+              <svg class="center-block__svg">
+                <use xlink:href="./icons/icons.svg#icon-sparkle" />
+              </svg>
+              <button
+                class="center-block__button"
+                id="openModalButton"
+                onclick="openModal()"
+              >
+                download now
+              </button>
+            </div>
+            <p class="center-block__bottom-text">Content also available on:</p>
+            <ul class="center-block__list">
+              <li class="center-block__item">
+                <svg class="center-item__svg">
+                  <use
+                    xlink:href="./icons/icons.svg#icon-google-podcast-logo"
+                  />
+                </svg>
+              </li>
+              <li class="center-block__item">
+                <svg class="center-item__svg">
+                  <use xlink:href="./icons/icons.svg#icon-spotify-logo-black" />
+                </svg>
+              </li>
+              <li class="center-block__item">
+                <svg class="center-item__svg">
+                  <use xlink:href="./icons/icons.svg#icon-youtube-logo" />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="app__right-block">
+            <img class="right-block__img" src="./images/play.png" />
+            <svg class="right-block__svg">
+              <use xlink:href="./icons/icons.svg#icon-swirl3" />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__head">
+          <div class="footer__left">
+            <div class="footer-left__logo">
+              <a href="#">
+                <svg class="logo footer-logo">
+                  <use xlink:href="./icons/icons.svg#icon-logo" />
+                </svg>
+              </a>
+              <p class="footer-left__logo-text">&#169;2023.</p>
+            </div>
+            <div class="footer-left__text-wrapper">
+              <p class="footer-left__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="footer-left__socials">
+              <a class="footer-left-socials__link" href="#">
+                <svg class="footer-left-link__svg">
+                  <use xlink:href="./icons/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+              <a class="footer-left-socials__link" href="#">
+                <svg class="footer-left-link__svg">
+                  <use xlink:href="./icons/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+              <a class="footer-left-socials__link" href="#">
+                <svg class="footer-left-link__svg">
+                  <use xlink:href="./icons/icons.svg#icon-tiktok" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__center">
+            <ul class="footer-center__links-left">
+              <li class="footer-center__item">
+                <a class="footer-center-item__link" href="#scrollHereEpisodes">About</a>
+              </li>
+              <li class="footer-center__item">
+                <a class="footer-center-item__link" href="#scrollHere">Testimonials</a>
+              </li>
+              <li class="footer-center__item">
+                <a class="footer-center-item__link" href="#scrollHere">Features</a>
+              </li>
+            </ul>
+            <ul class="footer-center__links-right">
+              <li class="footer-center__item">
+                <a class="footer-center-item__link" href="#scrollHereEpisodes">Episodes</a>
+              </li>
+              <li class="footer-center-list__item">
+                <a class="footer-center-item__link" href="#scrollHere">Pricing</a>
+              </li>
+              <li class="footer-center-list__item">
+                <a class="footer-center-item__link" href="#scrollHereEpisodes">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <div class="footer-right__logos">
+              <p class="footer-right-logos__text">
+                Listen to episodes on your fav platform:
+              </p>
+              <ul class="footer-right__logos-list">
+                <li class="logos-list__item">
+                  <a href="#">
+                    <svg class="footer-right__svg">
+                      <use xlink:href="./icons/icons.svg#icon-Google-Podcast" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="logos-list__item">
+                  <a href="#">
+                    <svg class="footer-right__svg">
+                      <use xlink:href="./icons/icons.svg#icon-Spotify" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="logos-list__item">
+                  <a href="#">
+                    <svg class="footer-right__svg">
+                      <use xlink:href="./icons/icons.svg#icon-Youtube" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-right__logos">
+              <p class="footer-right-logos__text-bottom">App available on:</p>
+              <ul class="footer-right-logos__item">
+                <li>
+                  <a href="#">
+                    <svg class="footer-right__svg-bottom">
+                      <use xlink:href="./icons/icons.svg#icon-app-store" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="footer-right__svg-bottom">
+                      <use xlink:href="./icons/icons.svg#icon-google-play" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer-bottom__text">
+            &#169;2023. All Rights Reserved.
+            <a class="footer-text__link" href="#">Pod of Cast</a>
+          </p>
+          <div class="footer__links-wrapper">
+            <a class="footer-text__link" href="#">Terms</a>
+            <p class="footer-dot"></p>
+            <a class="footer-text__link" href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+
+    <script>
+      document
+        .getElementById("closeModal")
+        .addEventListener("click", closeModal);
+
+      document
+        .getElementById("mainModal")
+        .addEventListener("click", closeModal);
+
+      function openModal() {
+        console.log("openModal beginning");
+        document.getElementById("mainModal").style.display = "block";
+        <!-- document.getElementById("closeModal").addEventListener("click", closeOnOutsideClick); -->
+        console.log("openModal end");
+      }
+
+      function closeModal() {
+        console.log("closeModal beginning");
+        document.getElementById("mainModal").style.display = "none";
+        console.log("closeModal end");
+      }
+
+      function openMenu() {
+        var x = document.getElementById("mobileMenu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>
